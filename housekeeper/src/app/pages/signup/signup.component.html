@@ -1,0 +1,67 @@
+<div class="bootstrap-wrapper bg-image">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <mat-card class="example-card" style="margin-top: 34px;">
+            <mat-card-header style="margin-top: 22px;">
+              <div class="container text-center" style="margin: 0px; margin-left: 62px; margin-top: 2px">
+                <img src="../../assets/cartoon.jpg" width="300" height="160">
+              </div>
+            </mat-card-header>
+            <mat-card-content>
+              <!-- {{user|json}} -->
+              <form (ngSubmit)="formSubmit()">
+                <div class="row">
+                  <div class="col-md-6">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>User name</mat-label>
+                      <input [(ngModel)]="user.username" name="username" id="username" matInput placeholder="Enter here" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Password</mat-label>
+                      <input matInput [(ngModel)]="user.password" name="password" id="password" placeholder="Enter here" required>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Your Name</mat-label>
+                      <input matInput [(ngModel)]="user.name" name="name" placeholder="Enter here" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Room no</mat-label>
+                      <input matInput [(ngModel)]="user.room" name="room" placeholder="Enter here" required>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Floor no</mat-label>
+                      <input matInput [(ngModel)]="user.floorno" name="floorno" placeholder="Enter here" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Hostelname</mat-label>
+                      <input matInput [(ngModel)]="user.hostelname" name="hostelname" placeholder="Enter here" required>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="container text-center" style="margin-left: 8rem;">
+                  <button mat-raised-button color="primary" style="margin-right: 10px;">Register</button>
+                  <button mat-raised-button color="accent">Clear</button>
+                </div>
+              </form>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,25 @@
+.full-width
+{
+   width: 100%; 
+   margin-left: 4px;
+}
+
+mat-card {
+   box-shadow: 0 19px 38px rgba(6, 6, 6, 0.952), 0 15px 12px rgba(0, 0, 0, 0.887);
+  
+}
+.bg-image{
+   background-image: url('/assets/signupp.jpg');
+   
+   height: 100%;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+   margin-top: -12px;
+ }
+
+ mat-label
+ {
+   color:#000;
+ }

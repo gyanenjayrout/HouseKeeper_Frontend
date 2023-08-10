@@ -1,0 +1,59 @@
+<p>
+    <mat-toolbar color="primary">
+      <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu_book</mat-icon>
+      </a>
+      <span>cleaning Service</span>
+      <span class="example-spacer"></span>
+      <a 
+      *ngIf="!isLoggedIn"
+      routerLink="/login"
+        mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>login</mat-icon>
+        
+      </a>
+      <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button> -->
+      <div style="margin-top: 7px;">
+        <p *ngIf="!isLoggedIn">Login</p>
+      </div>
+      
+      <a *ngIf="!isLoggedIn"
+      routerLink="/signup"
+      mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"  id="signup" style="margin-left: 39px;">
+        <mat-icon>how_to_reg</mat-icon>
+      </a>
+      <div style="margin-top: 7px; margin-left: 1px;">
+        <p *ngIf="!isLoggedIn">signup</p>
+      </div>
+
+      <a  style="margin-left:2px ;"
+      *ngIf="isLoggedIn&&user" routerLink="/admin/profile">
+    
+        
+        {{this.login.getUSer().username}}
+        
+      </a>
+
+      <a (click)="logout()"
+      
+      *ngIf="isLoggedIn"
+    
+      mat-icon-button class="example-icon"  aria-label="logout icon"   style="margin-left: 39px;">
+        <mat-icon>logout</mat-icon>
+      </a>
+      <div style="margin-top: 7px; margin-left: 1px;">
+        <p *ngIf="isLoggedIn">Logout</p>
+      </div>
+      
+      
+      <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button> -->
+      <!-- <div style="margin-top: 7px;">
+        <p *ngIf="!login.isLoggedIn()">Login</p>
+      </div>
+       -->
+    </mat-toolbar>
+  </p>
