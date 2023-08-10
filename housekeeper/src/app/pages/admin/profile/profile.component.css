@@ -1,0 +1,18 @@
+.profile-img
+{
+    max-width: 150px;
+    max-height: 150px;
+    border: 2px solid #ff4081;
+    border-radius: 50%;
+}
+.font-fam
+{
+    font-family: Georgia, serif;
+}
+.inf-content{
+    border:1px solid #DDDDDD;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}		

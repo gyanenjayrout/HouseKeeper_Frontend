@@ -1,0 +1,178 @@
+
+
+<div class="container bootstrap snippets bootdey">
+    <div class="panel-body inf-content">
+        <h1 class="text-center text-primary font-fam">Your Profile Details</h1>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img alt="" style="width:600px;" title="" class="img-circle img-thumbnail isTooltip" src="https://bootdey.com/img/Content/avatar/avatar7.png" data-original-title="Usuario"> 
+                <ul title="Ratings" class="list-inline ratings text-center">
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <strong class="text-center text-primary font-fam  " style="border:8px solid #ffff00f7; background: #ffff00f7" >Information</strong><br>
+                <div class="table-responsive">
+                <table class="table table-user-information">
+                    <tbody>
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                                    Identificacion                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                               {{user.id}}
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-user  text-primary"></span>    
+                                    name                                              
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                               {{user.name}}  
+                            </td>
+                        </tr>
+                        <!-- <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-cloud text-primary"></span>  
+                                    Lastname                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                             {{user.lastName}}
+                            </td>
+                        </tr> -->
+    
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-bookmark text-primary"></span> 
+                                    Username                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                {{user.username}}       
+                            </td>
+                        </tr>
+    
+    
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-eye-open text-primary"></span> 
+                                    Role                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                               {{user.authorities[0].authority}}
+                            </td>
+                        </tr>
+                        <!-- <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-envelope text-primary"></span> 
+                                    Email                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                {{user.email}}
+                            </td>
+                        </tr> -->
+                        <!-- <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                    Phone                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                {{user.phone}}
+                            </td>
+                        </tr>
+                        <tr>         -->
+                            <!-- <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                    Status                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                 {{user.enabled?"ACTIVE": "NOTACTIVE"}}
+                            </td>
+                        </tr>                                     -->
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            <button class="btn btn-danger " style="margin-right: 1.1rem;"> Update </button>
+            <button class="btn btn-warning "> Share </button>
+
+        </div>
+    </div>
+    </div>              
+
+
+    <!-- <mat-card>
+<h1 class="text-center text-primary font-fam">Your Profile Details</h1>
+<mat-card-content>	
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="container text-center">
+                <img src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?size=626&ext=jpg&ga=GA1.1.1631838369.1688018372&semt=ais" alt="" 
+                class="profile-img">
+                <h1 class="mt20 font-fam">Gyannejay Rout</h1>
+
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-md-10 offset-md-1">
+
+
+            <table class="table table-borderless table-dark font-fam">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+        </div>
+    </div>
+</mat-card-content>
+
+</mat-card> -->
