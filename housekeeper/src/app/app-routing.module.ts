@@ -11,6 +11,8 @@ import { AdminDashboardComponent } from './pages/admin/admin-dashboard/admin-das
 import { UserdashboardComponent } from './pages/user/userdashboard/userdashboard.component';
 import { ProfileComponent } from './pages/admin/profile/profile.component';
 import { CleanRequestComponent } from './pages/user/clean-request/clean-request.component';
+import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
+import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admin-view-request.component';
 
 const routes: Routes = [
   {
@@ -33,6 +35,10 @@ const routes: Routes = [
       {
         path:'profile',
         component:ProfileComponent,
+      },
+      {
+        path:'view-requests',
+        component:AdminViewRequestComponent,
       }
     ]
    },
@@ -49,6 +55,10 @@ const routes: Routes = [
       {
         path:'user-feedback',
         component:UserFeedbackComponent,
+      },
+      {
+        path:'user-profile',
+        component:UserProfileComponent,
       }
     ]
    }

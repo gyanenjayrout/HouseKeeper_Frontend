@@ -31,7 +31,9 @@ import {MatSelectModule} from '@angular/material/select';
 import { ProfileComponent } from './pages/admin/profile/profile.component';
 import { UserSidebarComponent } from './pages/user/user-sidebar/user-sidebar.component';
 import { CleanRequestComponent } from './pages/user/clean-request/clean-request.component';
-import { UserFeedbackComponent } from './pages/user/user-feedback/user-feedback.component'; 
+import { UserFeedbackComponent } from './pages/user/user-feedback/user-feedback.component';
+import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
+import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admin-view-request.component'; 
 
 
 @NgModule({
@@ -49,6 +51,8 @@ import { UserFeedbackComponent } from './pages/user/user-feedback/user-feedback.
     UserSidebarComponent,
     CleanRequestComponent,
     UserFeedbackComponent,
+    UserProfileComponent,
+    AdminViewRequestComponent,
   
   ],
   imports: [

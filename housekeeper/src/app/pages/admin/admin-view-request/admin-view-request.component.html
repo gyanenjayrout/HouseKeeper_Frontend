@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center text-primary">User Requests</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Cleaning Time</th>
+              <th>Room Number</th>
+              <th>Floor Number</th>
+              <th>Hostel Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let req of requests">
+              <td>{{ req.date }}</td>
+              <td>{{ req.cleaningtime }}</td>
+              <td>{{ req.roomno }}</td>
+              <td>{{ req.floorno }}</td>
+              <td>{{ req.hostelname }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

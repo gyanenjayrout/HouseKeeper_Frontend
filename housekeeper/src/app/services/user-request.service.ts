@@ -5,6 +5,7 @@ const baseUrl = 'http://localhost:7081';
   providedIn: 'root'
 })
 export class UserRequestService {
+  requests: any;
 
   constructor(private http:HttpClient) { }
 
@@ -12,6 +13,12 @@ export class UserRequestService {
   public sendRequest(req:any)
   {
     return this.http.post(`${baseUrl}/cleanRequest/saveCleanRequest`,req);
+
+  }
+
+  public getRequest()
+  {
+    return this.http.get(`${baseUrl}/cleanRequest/getAllCleanRequests`);
 
   }
 }
