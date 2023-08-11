@@ -1,4 +1,13 @@
 .example-spacer {
     flex: 1 1 auto;
   }
-  
+  /* .bg-image{
+    background-image: url('/assets/.jpg');
+    
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: -12px;
+  } */

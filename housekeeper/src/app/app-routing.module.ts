@@ -9,6 +9,7 @@ import { normalGuard } from './services/normal.guard';
 import { AdminDashboardComponent } from './pages/admin/admin-dashboard/admin-dashboard.component';
 import { UserdashboardComponent } from './pages/user/userdashboard/userdashboard.component';
 import { ProfileComponent } from './pages/admin/profile/profile.component';
+import { CleanRequestComponent } from './pages/user/clean-request/clean-request.component';
 
 const routes: Routes = [
   {
@@ -37,8 +38,14 @@ const routes: Routes = [
    {
     path:'user',
     component:UserdashboardComponent,
-    pathMatch:'full',
-    canActivate:[normalGuard]
+    
+    canActivate:[normalGuard],
+    children:[
+      {
+        path:'clean-req',
+        component:CleanRequestComponent,
+      }
+    ]
    }
 ];
 

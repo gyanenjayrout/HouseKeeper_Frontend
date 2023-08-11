@@ -28,7 +28,9 @@ import {MatListModule} from '@angular/material/list';
 
 import {MatDividerModule} from '@angular/material/divider'; 
 import {MatSelectModule} from '@angular/material/select';
-import { ProfileComponent } from './pages/admin/profile/profile.component'; 
+import { ProfileComponent } from './pages/admin/profile/profile.component';
+import { UserSidebarComponent } from './pages/user/user-sidebar/user-sidebar.component';
+import { CleanRequestComponent } from './pages/user/clean-request/clean-request.component'; 
 
 
 @NgModule({
@@ -43,6 +45,8 @@ import { ProfileComponent } from './pages/admin/profile/profile.component';
     SidebarComponent,
     UserdashboardComponent,
     ProfileComponent,
+    UserSidebarComponent,
+    CleanRequestComponent,
   
   ],
   imports: [
