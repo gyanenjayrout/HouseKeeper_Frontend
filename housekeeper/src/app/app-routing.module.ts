@@ -1,3 +1,4 @@
+import { UserFeedbackComponent } from './pages/user/user-feedback/user-feedback.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -44,6 +45,10 @@ const routes: Routes = [
       {
         path:'clean-req',
         component:CleanRequestComponent,
+      },
+      {
+        path:'user-feedback',
+        component:UserFeedbackComponent,
       }
     ]
    }
