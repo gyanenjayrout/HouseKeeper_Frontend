@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center text-primary">User Feedbacks</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>HouseKeeper Name</th>
+              <th>Complaints</th>
+              <th>Suggestions</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let fed of feedbacks">
+              <td>{{ fed.housekeeperName }}</td>
+              <td>{{ fed.complaints }}</td>
+              <td>{{ fed.suggestions }}</td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

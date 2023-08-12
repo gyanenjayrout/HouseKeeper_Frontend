@@ -4,24 +4,23 @@
         <div class="col-md-6 offset-md-3">
           <mat-card class="example-card  " style="margin-top: 23px;" >
             <mat-card-header style="margin-top: 22px;">
-          <!-- <div class="container text-center" style="margin: 0px; margin-left: 5px; margin-top:2px">
-            <img src="../../assets/signup22.png" width="300" height="130">
-          </div> -->
+          
         </mat-card-header >
         <mat-card-content>
-          <!-- {{user|json}} -->
+          
           <form (ngSubmit)="formSubmit()">
             <div class="row">
+              
               <div class="col-md-6">
                 <mat-form-field class="full-width" appearance="outline">
-                  <mat-label>HouseKeeper Id</mat-label>
-                  <input [(ngModel)]="feedback.housekeeper_id"  name="housekeeper_id" id="housekeeper_id" matInput placeholder="Enter here" required>
+                  <mat-label>Housekeeper Name</mat-label>
+                  <input [(ngModel)]="feedback.housekeeperName" matInput  name="housekeeperName" id="housekeeperName" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
               <div class="col-md-6">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Rate Service</mat-label>
-                  <input [(ngModel)]="feedback.rate_service" matInput  name="rate_service" id="rate_service" placeholder="Enter here" required>
+                  <input [(ngModel)]="feedback.rateService" matInput  name="rateService" id="rateService" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
             </div>
@@ -69,5 +68,6 @@
       </div>
     </div>
   </div>
+  
 
   

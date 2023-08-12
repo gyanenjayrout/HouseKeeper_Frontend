@@ -14,6 +14,7 @@ import { CleanRequestComponent } from './pages/user/clean-request/clean-request.
 import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
 import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admin-view-request.component';
 import { AddHouseKeeperComponent } from './pages/admin/add-house-keeper/add-house-keeper.component';
+import { AdminViewFeedbacksComponent } from './pages/admin/admin-view-feedbacks/admin-view-feedbacks.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
       {
         path:'add-housekeepers',
         component:AddHouseKeeperComponent,
+      },
+      {
+        path:'view-feedbacks',
+        component:AdminViewFeedbacksComponent,
       }
     ]
    },

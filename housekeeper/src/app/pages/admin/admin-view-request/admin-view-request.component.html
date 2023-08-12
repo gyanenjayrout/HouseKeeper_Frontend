@@ -10,6 +10,7 @@
               <th>Room Number</th>
               <th>Floor Number</th>
               <th>Hostel Name</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody>
@@ -19,6 +20,14 @@
               <td>{{ req.roomno }}</td>
               <td>{{ req.floorno }}</td>
               <td>{{ req.hostelname }}</td>
+             <!-- <td>
+                <button class="btn" [class.red-button]="!req.served" [ngClass]="{'btn-success': req.served}" (click)="serveRequest(req)">Serve</button>
+              </td>-->
+              <td>
+                <button class="btn" [class.red-button]="!req.served" [ngClass]="{'btn-success': req.served}" (click)="serveRequest(req)">
+                  {{ req.served ? 'Served' : 'Serving' }}
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>

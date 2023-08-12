@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FeedbackServiceService } from 'src/app/services/feedback-service.service';
@@ -10,8 +11,8 @@ import swal from 'sweetalert';
 })
 export class UserFeedbackComponent implements OnInit{
   public feedback = {
-    housekeeper_id:'',
-    rate_service:'',
+    housekeeperName:'',
+    rateService:'',
     timein:'',
     timeout:'',
     suggestions:'',
@@ -20,10 +21,10 @@ export class UserFeedbackComponent implements OnInit{
   };
   constructor(private feedbackService: FeedbackServiceService,private snackBar: MatSnackBar) { }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
-  formSubmit(): void{
-    console.log(this.feedback);
+  /*formSubmit(): void{
+   // console.log(this.feedback);
     this.feedbackService.addFeedback(this.feedback).subscribe({
       next: (data: any) => {
         console.log(data);
@@ -39,6 +40,24 @@ export class UserFeedbackComponent implements OnInit{
       })
       },
   });
+}*/
+formSubmit(): void {
+  this.feedbackService.addFeedback(this.feedback).subscribe({
+    next: (data: any) => {
+      console.log(data);
+      swal('Request sent Successfully');
+    },
+    error: (error: any) => {
+      console.error('Error:', error);
+      if (error instanceof HttpErrorResponse) {
+        console.error('Response:', error.error); // Log the response content
+      }
+      
+      this.snackBar.open('Request not sent', '', {
+        duration: 3000,
+      });
+    },
+  });
 }
 
  

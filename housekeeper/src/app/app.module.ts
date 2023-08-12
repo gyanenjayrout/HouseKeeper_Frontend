@@ -35,6 +35,7 @@ import { UserFeedbackComponent } from './pages/user/user-feedback/user-feedback.
 import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
 import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admin-view-request.component';
 import { AddHouseKeeperComponent } from './pages/admin/add-house-keeper/add-house-keeper.component'; 
+import { AdminViewFeedbacksComponent } from './pages/admin/admin-view-feedbacks/admin-view-feedbacks.component';
 
 
 @NgModule({
@@ -55,6 +56,8 @@ import { AddHouseKeeperComponent } from './pages/admin/add-house-keeper/add-hous
     UserProfileComponent,
     AdminViewRequestComponent,
     AddHouseKeeperComponent,
+    AdminViewFeedbacksComponent
+    
   
   ],
   imports: [

@@ -12,11 +12,15 @@ export class FeedbackServiceService {
   
   public addFeedback(feedback:any)
   {
-    const baseUrl = 'http://localhost:7081';
-    const headers = { 'Content-Type': 'application/json' };
-
-    return this.http.post(`${baseUrl}/feedback/saveFeedback`,feedback, { headers });
+    
+    return this.http.post(`${baseUrl}/feedback/saveFeedback`,feedback);
 
   }
+  public getFeedbacks()
+  {
+    return this.http.get(`${baseUrl}/feedback/getAllFeedbacks`);
+
+  }
+ 
  
 }

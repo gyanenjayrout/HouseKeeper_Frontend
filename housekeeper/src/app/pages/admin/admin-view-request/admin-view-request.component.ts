@@ -31,5 +31,19 @@ export class AdminViewRequestComponent implements OnInit
       }
     });
   }
+  
+    serveRequest(request: any) {
+      // Toggle the 'served' property
+      request.served = !request.served;
+  
+      // You can perform any additional actions here, like showing a message
+      if (request.served) {
+        this.snack.open('Request served!', 'Dismiss', {
+          duration: 3000,
+          horizontalPosition: 'center',
+          verticalPosition: 'top'
+        });
+      }
+    }
 
 }
