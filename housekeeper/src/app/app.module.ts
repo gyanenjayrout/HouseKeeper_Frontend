@@ -33,7 +33,8 @@ import { UserSidebarComponent } from './pages/user/user-sidebar/user-sidebar.com
 import { CleanRequestComponent } from './pages/user/clean-request/clean-request.component';
 import { UserFeedbackComponent } from './pages/user/user-feedback/user-feedback.component';
 import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
-import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admin-view-request.component'; 
+import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admin-view-request.component';
+import { AddHouseKeeperComponent } from './pages/admin/add-house-keeper/add-house-keeper.component'; 
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admi
     UserFeedbackComponent,
     UserProfileComponent,
     AdminViewRequestComponent,
+    AddHouseKeeperComponent,
   
   ],
   imports: [
