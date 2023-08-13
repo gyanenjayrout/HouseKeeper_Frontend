@@ -1,0 +1,64 @@
+<div class="bootstrap-wrapper bg-image">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <mat-card class="example-card  " style="margin-top: 23px;" >
+            <mat-card-header style="margin-top: 22px;">
+          <!-- <div class="container text-center" style="margin: 0px; margin-left: 5px; margin-top:2px">
+            <img src="../../assets/signup22.png" width="300" height="130">
+          </div> -->
+        </mat-card-header >
+        <mat-card-content>
+          <!-- {{user|json}} (ngSubmit)="sendAlerts()" [(ngModel)]="request.roomno" -->
+          <form (ngSubmit)="sendAlerts()" >
+            
+              <div class="col-md-10">
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Room no</mat-label>
+                  <input [(ngModel)]="alert.roomno" name="roomno"id="roomno" matInput placeholder="Enter here" required>
+                </mat-form-field>
+              </div>
+              <div class="col-md-10">
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Floor no</mat-label>
+                  <input matInput   [(ngModel)]="alert.cleaningtime" name="cleaningtime" id="cleaningtime" placeholder="Enter here" required>
+                </mat-form-field>
+              </div>
+            
+            
+              <div class="col-md-10">
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Hostel name</mat-label>
+                  <input matInput   [(ngModel)]="alert.hostelname"  name="hostelname" placeholder="Enter here" required>
+                </mat-form-field>
+              </div>
+              <div class="col-md-10">
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Date</mat-label>
+                  <input matInput name="date"   [(ngModel)]="alert.date" placeholder="Enter here" required>
+                </mat-form-field>
+              </div>
+            
+           
+              <div class="col-md-10">
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Cleaning Timing</mat-label>
+                  <input matInput  name="floorno"  [(ngModel)]="alert.floorno" placeholder="Enter here" required>
+                </mat-form-field>
+              </div>
+           
+         
+            
+              
+  
+            <div class="container text-center" style="margin-left: -1rem;">
+              <button mat-raised-button color="primary" style="margin-right: 10px;">send</button>
+              <button mat-raised-button color="accent">Clear</button>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>

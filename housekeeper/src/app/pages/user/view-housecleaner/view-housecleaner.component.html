@@ -1,0 +1,54 @@
+
+<div class="center">
+    <h2 >Admin Dashboard</h2>
+  </div>
+  <table class="housekeepers-table">
+    <thead>
+      <tr>
+        <th>Id.No</th>
+        <th>Room no</th>
+        <th>FLoor No</th>
+        <th>Hostel name</th>
+        <th>Cleaning Timing</th>
+        <th>Housekeeper Name</th>
+        <th>Housekkepr Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alert of Alerts; ">
+        <td>{{alert.aid}}</td>
+        <td>{{ alert.roomno }}</td>
+        
+        
+        <td>{{alert.hostelname}}</td>
+        <td>{{alert.cleaningtime}}</td>
+        <td>{{alert.date}}</td>
+        <td>{{alert.housekeepername}}</td>
+        <td></td>
+        <!-- <td> <button mat-icon-button class="icon"  [routerLink]="'/admin/sen-alert/' + housecleaner.hid + '/' + housecleaner.hname"
+            >
+              <mat-icon> add_alert </mat-icon>
+              
+            </button></td>
+            <td>
+                <button mat-icon-button class="icon" >
+            
+              <mat-icon> delete </mat-icon>
+              
+            </button>
+            </td>
+
+
+            <td>
+                <button mat-icon-button class="icon" >
+            
+              <mat-icon> update </mat-icon>
+              
+            </button>
+            </td> -->
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  

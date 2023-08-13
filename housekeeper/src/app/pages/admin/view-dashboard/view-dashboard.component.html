@@ -1,0 +1,51 @@
+
+<div class="center">
+    <h2 >Admin Dashboard</h2>
+  </div>
+  <table class="housekeepers-table">
+    <thead>
+      <tr>
+        <th>Id.No</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Time Availability</th>
+        <th>Alert</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let housecleaner of allHouseCleaners; ">
+        <td>{{housecleaner.hid}}</td>
+        <td>{{ housecleaner.hname }}</td>
+        <td [ngClass]="{ 'unavailable': housecleaner.status === 'unavailable', 'available': housecleaner.status === 'available' }">
+          {{ housecleaner.status }}
+        </td>
+        <td>{{ housecleaner.timing }}</td>
+        <td> <button mat-icon-button class="icon"  [routerLink]="'/admin/sen-alert/' + housecleaner.hid + '/' + housecleaner.hname"
+            >
+              <mat-icon> add_alert </mat-icon>
+              
+            </button></td>
+            <td>
+                <button mat-icon-button class="icon" >
+            
+              <mat-icon> delete </mat-icon>
+              
+            </button>
+            </td>
+
+
+            <td>
+                <button mat-icon-button class="icon" >
+            
+              <mat-icon> update </mat-icon>
+              
+            </button>
+            </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  

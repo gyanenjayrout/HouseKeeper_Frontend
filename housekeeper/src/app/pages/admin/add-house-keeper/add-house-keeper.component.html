@@ -10,18 +10,18 @@
 <body>
   <div class="container mt-5">
     <h1>Adding HouseKeeper</h1>
-    <form>
+    <form  (ngSubmit)="addHousecleaner()"> 
       <div class="mb-3">
         <label for="name" class="form-label">HouseKeeperName</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        <input type="text" [(ngModel)]="housecleanerr.hname" name="hname" class="form-control" id="name" placeholder="Enter your name">
       </div>
       <div class="mb-3">
         <label for="status" class="form-label">Status</label>
-        <input type="text" class="form-control" id="status" placeholder="Enter your status">
+        <input type="text" [(ngModel)]="housecleanerr.status" name="status" class="form-control" id="status" placeholder="Enter your status">
       </div>
       <div class="mb-3">
-        <label for="time" class="form-label">Time</label>
-        <input type="time" class="form-control" id="time">
+        <label for="time" class="form-label" >Timing</label>
+        <input type="text" class="form-control" [(ngModel)]="housecleanerr.timing" name="timing" id="time">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
