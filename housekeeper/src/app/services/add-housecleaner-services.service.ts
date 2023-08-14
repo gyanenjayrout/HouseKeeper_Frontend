@@ -20,4 +20,20 @@ export class AddHousecleanerServicesService {
   {
     return this.http.get(`${baseUrl}/housecleaner/ `);
   }
+
+  public viewHouseKeeperById(hid:any)
+  {
+    return this.http.get(`${baseUrl}/housecleaner/${hid} `);
+  }
+
+  public updateHousekeeper(housekeeper:any)
+  {
+    return this.http.put(`${baseUrl}/housecleaner/`,housekeeper);
+
+  }
+
+  public deleteHousekeeper(hid:any)
+  {
+    return this.http.delete(`${baseUrl}/housecleaner/${hid} `);
+  }
 }

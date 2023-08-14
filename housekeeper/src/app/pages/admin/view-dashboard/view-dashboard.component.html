@@ -28,7 +28,7 @@
               
             </button></td>
             <td>
-                <button mat-icon-button class="icon" >
+                <button mat-icon-button class="icon"  (click)="deleteQuiz(housecleaner.hid)">
             
               <mat-icon> delete </mat-icon>
               
@@ -37,7 +37,7 @@
 
 
             <td>
-                <button mat-icon-button class="icon" >
+                <button mat-icon-button class="icon" [routerLink]="'/admin/update-housecleaner/' + housecleaner.hid ">
             
               <mat-icon> update </mat-icon>
               

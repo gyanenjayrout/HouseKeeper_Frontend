@@ -18,6 +18,11 @@ public getCurrentUser()
 {
   return this.http.get(`${baseUrl}/current_user`);
 }
+
+public updateCureentUser(user:any)
+{
+  return this.http.put(`${baseUrl}/edit-user`,user);
+}
   public generateToken(loginData:any)
 {
   const baseUrl = 'http://localhost:7081';

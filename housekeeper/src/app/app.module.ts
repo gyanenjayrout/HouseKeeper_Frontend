@@ -39,6 +39,7 @@ import { AdminViewFeedbacksComponent } from './pages/admin/admin-view-feedbacks/
 import { ViewDashboardComponent } from './pages/admin/view-dashboard/view-dashboard.component';
 import { ViewHousecleanerComponent } from './pages/user/view-housecleaner/view-housecleaner.component';
 import { SendAlertComponent } from './pages/admin/send-alert/send-alert.component';
+import { UpdateHousecleanerComponent } from './pages/admin/update-housecleaner/update-housecleaner.component';
 
 
 @NgModule({
@@ -63,7 +64,7 @@ import { SendAlertComponent } from './pages/admin/send-alert/send-alert.componen
   
     ViewDashboardComponent,
     ViewHousecleanerComponent
-    ,SendAlertComponent
+    ,SendAlertComponent, UpdateHousecleanerComponent, 
   
   ],
   imports: [

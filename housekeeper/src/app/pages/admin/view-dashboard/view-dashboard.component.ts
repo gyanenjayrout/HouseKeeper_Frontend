@@ -34,5 +34,27 @@ export class ViewDashboardComponent implements OnInit {
 
   }
 
+  deleteQuiz(hid: any) {
+    swal({
+      icon: 'info',
+      title: 'Are You Sure ? !',
+      text: "This action cannot be undone.",
+      buttons: ['Cancel', 'Delete'], // Using buttons array to set custom button text
+      dangerMode: true, // Adding dangerMode for the red "Delete" button
+    }).then((isConfirmed: boolean) => {
+      if (isConfirmed) {
+        this.viewdashboard.deleteHousekeeper(hid).subscribe({
+          next: (data: any) => {
+            this.viewDashboard();
+          },
+          error: (error) => {
+            console.log(error);
+            swal('Error !!', 'Error in Deleting data ', 'error');
+          }
+        });
+      }
+    });
+  }
+  
  
 }

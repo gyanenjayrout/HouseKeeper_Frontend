@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginservicService } from 'src/app/services/loginservic.service';
+import  swal from 'sweetalert';
 
 @Component({
   selector: 'app-profile',
@@ -24,8 +26,30 @@ export class ProfileComponent implements OnInit {
    
   }
 
-  constructor(private login:LoginservicService)
+  constructor(private login:LoginservicService, private router:Router)
   {
 
+  }
+
+  updateprofile()
+  {
+    
+    this.login.updateCureentUser( this.user).subscribe({
+    
+      next:(data:any)=>{
+        swal('SuccesFully Updated').then((e)=>
+        {
+          this.router.navigate(['/admin'])
+        })
+        console.log(data);
+
+      
+      }
+      ,error:(error: any)=>{
+        console.log(error);
+        swal('Server Error !!')
+        
+      }
+    })
   }
 }
