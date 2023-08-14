@@ -44,7 +44,7 @@ reqSubmit()
   this.sendreq.sendRequest(this.request).subscribe({
     next: (data: any) => {
       console.log(data);
-      swal('User '+data.username +' Request Submitted')
+      swal('your  cleaning  Request Submitted')
     },
     error: (error: any) => {
       console.log(error);

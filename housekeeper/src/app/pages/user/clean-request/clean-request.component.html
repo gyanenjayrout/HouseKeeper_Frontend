@@ -11,42 +11,41 @@
         <mat-card-content>
           <!-- {{user|json}} -->
           <form (ngSubmit)="reqSubmit()">
-            <div class="row">
-              <div class="col-md-6">
+           
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Room name</mat-label>
                   <input  name="roomno" [(ngModel)]="request.roomno"id="roomno" matInput placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Cleaning Time</mat-label>
                   <input matInput  [(ngModel)]="request.cleaningtime"  name="cleaningtime" id="cleaningtime" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
+        
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Hostel name</mat-label>
                   <input matInput  [(ngModel)]="request.hostelname"  name="hostelname" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Date</mat-label>
                   <input matInput name="date" [(ngModel)]="request.date" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
+            
+            
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Floor No</mat-label>
                   <input matInput  name="floorno" [(ngModel)]="request.floorno" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-            </div>
+          
               
             
               

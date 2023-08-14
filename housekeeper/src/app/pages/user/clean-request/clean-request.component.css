@@ -1,11 +1,19 @@
-/* 
-.bg-image{
-    background-image: url('/assets/service.jpg');
-    
-    height: 200%;
+.full-width
+{
+   width: 100%; 
+   margin-left: 4px;
+}
+
+
+
+
+mat-card {
+    box-shadow: 0 19px 38px rgba(6, 6, 6, 0.952), 0 15px 12px rgba(0, 0, 0, 0.887);
    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-   
-  } */
+ }
+
+ 
+ mat-label
+ {
+   color:#000;
+ }

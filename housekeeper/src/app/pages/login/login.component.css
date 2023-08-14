@@ -26,3 +26,16 @@ mat-card {
  {
    color:#000;
  }
+
+ .bg-img
+ {
+   background-image: url('/assets/loging.jpg');
+   
+   height: 100%;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+   margin-top: -12px;
+
+ }

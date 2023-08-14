@@ -15,9 +15,9 @@ import { UserProfileComponent } from './pages/user/user-profile/user-profile.com
 import { AdminViewRequestComponent } from './pages/admin/admin-view-request/admin-view-request.component';
 import { AddHouseKeeperComponent } from './pages/admin/add-house-keeper/add-house-keeper.component';
 import { AdminViewFeedbacksComponent } from './pages/admin/admin-view-feedbacks/admin-view-feedbacks.component';
-import { SendAlertComponent } from './pages/user/clean-request/send-alert/send-alert.component';
 import { ViewDashboardComponent } from './pages/admin/view-dashboard/view-dashboard.component';
 import { ViewHousecleanerComponent } from './pages/user/view-housecleaner/view-housecleaner.component';
+import { SendAlertComponent } from './pages/admin/send-alert/send-alert.component';
 
 const routes: Routes = [
   {

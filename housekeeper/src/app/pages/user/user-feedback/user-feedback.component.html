@@ -9,37 +9,37 @@
         <mat-card-content>
           
           <form (ngSubmit)="formSubmit()">
-            <div class="row">
+           
               
-              <div class="col-md-6">
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Housekeeper Name</mat-label>
                   <input [(ngModel)]="feedback.housekeeperName" matInput  name="housekeeperName" id="housekeeperName" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Rate Service</mat-label>
                   <input [(ngModel)]="feedback.rateService" matInput  name="rateService" id="rateService" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
+           
+            
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Timein</mat-label>
                   <input [(ngModel)]="feedback.timein" matInput  name="timein" id="timein" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Timeout</mat-label>
                   <input [(ngModel)]="feedback.timeout" matInput name="timeout" id="timeout" placeholder="Enter here" required>
                 </mat-form-field>
               </div>
-              </div>
+              
             <div>
-              <div class="col-md-6">
+              <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Suggetions</mat-label>
                   <textarea [(ngModel)]="feedback.suggestions" matInput name="suggestions" id="suggestions" placeholder="Enter suggestions here" required></textarea>
@@ -47,7 +47,7 @@
                  
               </div>
               
-                <div class="col-md-6">
+                <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Complaints</mat-label>
                   <textarea [(ngModel)]="feedback.complaints" matInput name="complaints" id="complaints" placeholder="Enter here" required></textarea>
