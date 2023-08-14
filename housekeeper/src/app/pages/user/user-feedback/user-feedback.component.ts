@@ -11,6 +11,7 @@ import swal from 'sweetalert';
 })
 export class UserFeedbackComponent implements OnInit{
   public feedback = {
+    housekeeperId:'',
     housekeeperName:'',
     rateService:'',
     timein:'',

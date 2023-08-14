@@ -5,6 +5,7 @@
         <table class="table">
           <thead>
             <tr>
+              <th>HouseKeeper Id</th>
               <th>HouseKeeper Name</th>
               <th>Complaints</th>
               <th>Suggestions</th>
@@ -13,6 +14,7 @@
           </thead>
           <tbody>
             <tr *ngFor="let fed of feedbacks">
+              <td>{{fed.housekeeperId}}</td>
               <td>{{ fed.housekeeperName }}</td>
               <td>{{ fed.complaints }}</td>
               <td>{{ fed.suggestions }}</td>
