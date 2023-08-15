@@ -34,7 +34,7 @@ export class ViewDashboardComponent implements OnInit {
 
   }
 
-  deleteQuiz(hid: any) {
+  deleteDashboard(hid: any) {
     swal({
       icon: 'info',
       title: 'Are You Sure ? !',

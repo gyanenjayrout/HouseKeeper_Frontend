@@ -11,7 +11,18 @@
         <mat-card-content>
           <!-- {{user|json}} (ngSubmit)="sendAlerts()" [(ngModel)]="request.roomno" -->
           <form (ngSubmit)="sendAlerts()" >
-            
+            <div class="col-md-10">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>HouseKeeper ID</mat-label>
+                <input matInput   [(ngModel)]="alert.housekeeperid" name="housekeeperid" id="cleaningtime" placeholder="Enter here" required>
+              </mat-form-field>
+            </div>
+            <div class="col-md-10">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>HouseKeeper Name</mat-label>
+                <input matInput   [(ngModel)]="alert.housekeepername" name="housekeepername" id="cleaningtime" placeholder="Enter here" required>
+              </mat-form-field>
+            </div>
               <div class="col-md-10">
                 <mat-form-field class="full-width" appearance="outline">
                   <mat-label>Room no</mat-label>
