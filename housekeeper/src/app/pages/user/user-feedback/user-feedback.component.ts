@@ -51,15 +51,25 @@ formSubmit(): void {
     error: (error: any) => {
       console.error('Error:', error);
       if (error instanceof HttpErrorResponse) {
-        console.error('Response:', error.error); // Log the response content
+        console.error('Response:', error.error);
+
+        try {
+          const responseError = JSON.parse(error.error.text);
+          console.error('Response Error:', responseError);
+        } catch (parseError) {
+          console.error('Error parsing response:', parseError);
+          console.error('Response Text:', error.error.text); // Log the raw response text
+        }
       }
-      
+
       this.snackBar.open('Request not sent', '', {
         duration: 3000,
       });
-    },
-  });
+    },
+  });
 }
+
+
 
  
 }

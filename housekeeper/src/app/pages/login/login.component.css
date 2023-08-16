@@ -16,7 +16,6 @@ mat-card {
    background-image: url('/assets/login-2.jpg');
    
    height: 100%;
-   /* Center and scale the image nicely */
    background-position: center;
    background-repeat: no-repeat;
    background-size:cover;
@@ -29,10 +28,10 @@ mat-card {
 
  .bg-img
  {
-   background-image: url('/assets/loging.jpg');
+   background-image: url('/assets/x.jpg');
    
    height: 100%;
-   /* Center and scale the image nicely */
+  
    background-position: center;
    background-repeat: no-repeat;
    background-size:cover;
