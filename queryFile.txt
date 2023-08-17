@@ -1,0 +1,85 @@
+sql Queries of the Housekeeper Application
+------------------------------------------
+
+creating the housekeeping database
+create database housekeeping;
+
+viewing users table
+select * from users;
+Table: users schema
+Columns:
+id             bigint PK 
+floorno        varchar(255) 
+hostelname     varchar(255) 
+name           varchar(255) 
+password       varchar(255) 
+room           varchar(255) 
+username       varchar(255
+
+
+
+viewing user_role table
+select * from user_role;
+Table: user_role schema
+Columns:
+user_role_id     bigint PK 
+role_role_id     bigint 
+user_id          bigint
+
+
+viewing roles table
+select * from roles;
+Table: roles schema
+Columns:
+role_id        bigint PK 
+role_name      varchar(255)
+
+
+viewing feedback table
+select * from feedback;
+Table: feedback schema
+feedbackid          int PK 
+complaints          varchar(255) 
+housekeeper_id      varchar(255) 
+housekeeper_name    varchar(255) 
+rate_service        varchar(255) 
+suggestions         varchar(255) 
+timein              varchar(255) 
+timeout             varchar(255)
+
+
+viewing clean_request table
+select * from clean_request;
+Table: clean_request schema
+Columns:
+cleanreqid        int PK 
+cleaningtime      varchar(255) 
+date              varchar(255) 
+floorno           varchar(255) 
+hostelname        varchar(255) 
+roomno            varchar(25
+
+
+viewing house_keeper table
+select * from house_keeper;
+Table: house_keeper schema
+Columns:
+hid        bigint PK 
+hname      varchar(255) 
+status     varchar(255) 
+timing     varchar(255)
+
+
+viewing alert table
+select * from alert;
+Table: alert schema
+Columns:
+aid             bigint PK 
+cleaningtime    varchar(255) 
+date            varchar(255) 
+floorno         varchar(255) 
+hostelname      varchar(255) 
+housekeeperid   varchar(255) 
+housekeepername varchar(255) 
+roomno          varchar(255) 
+housekeeper_hid bigint
